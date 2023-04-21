@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Simple Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
-    <header>
-      <h1>My Simple Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>Welcome</h2>
-        <p>Welcome to my simple website. This is just a demo page, but you can use this layout as a starting point for your own site.</p>
-      </section>
-      <section>
-        <h2>About</h2>
-        <p>Here you can provide some information about yourself or your business.</p>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <p>Here you can provide your contact information, such as your email address or phone number.</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © My Simple Website</p>
-    </footer>
+    <div class="container">
+        <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+
+        Height (cm):
+        <input type="number" class="input" id="height" value="180" placeholder="Enter your height in cm">
+
+        Weight (kg):
+        <input type="number" class="input" id="weight" value="80" placeholder="Enter your weight in kg">
+
+        <button class="btn">Compute BMI</button>
+
+        <input disabled type="text" class="input" id="bmi-result">
+
+        <h4 class="info-text">Weight Condition: <span id=weight-condition></span></h4>
+    </div>
   </body>
 </html>
