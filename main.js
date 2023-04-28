@@ -8,13 +8,9 @@ function calculateBMI() {
 
     if (bmi < 18.5) {
         document.getElementById('weight-condition').innerText = "Under Weight";
-    } 
-    
-    else if (bim >= 18.5 && bmi <= 24.9) {
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
         document.getElementById('weight-condition').innerText = "Normal Weight";
-    }
-
-    else if (bmi > 24.9) {
+    } else if (bmi > 24.9) {
         document.getElementById('weight-condition').innerText = "Over Weight";
     }
 }
